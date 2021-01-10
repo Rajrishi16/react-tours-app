@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Tours from "./components/Tours";
 import Loading from "./components/Loading";
+// check all console logs before deploying
 
 function App() {
   const [loading, setLoading] = useState(true);
