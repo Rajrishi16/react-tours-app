@@ -44,12 +44,16 @@ function App() {
       {tours.length === 0 ? (
         <section className="text-center">
           <h1>No Tours Left</h1>
+          <p className="underline"></p>
           <button className="btn btn-success" onClick={() => fetchTours()}>
             Refresh
           </button>
         </section>
       ) : (
-        <h1 className="text-center">Our Tours</h1>
+        <section>
+          <h1 className="text-center">Our Tours</h1>
+          <p className="underline"></p>
+        </section>
       )}
       <Tours tours={tours} notInterested={notInterested} />
     </section>
